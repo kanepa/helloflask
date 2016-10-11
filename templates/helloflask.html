@@ -10,13 +10,14 @@
 <p> Flask is is not Flash</p>
 
 <ol>
-    {% for album in album %}
+    {% for album in albums%}
 
-    <li> {{ album in album }}</li>
-    <p>{{ album }}</p>
-    <p>{{ album }}</p>
+    <li> {{ album in albums }}</li>
+    <p>{{ album.title }}</p>
+    <p>{{ album.artist }}</p>
+        <p>{{ album.year }}</p>
 
-    {% endfor  %}
+    {% endfor %}
 </ol>
 {% for genre in genres %}
 <p> {{ genre }}</p>
