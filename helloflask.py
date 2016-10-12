@@ -62,7 +62,7 @@ def get_artists():
 def get_artist_details(id):
     return render_template("artist_details.html", artists=artists)
 
-@app.route('/users/<user>')
+@app.route('/user/<user>')
 def user(user):
     age = ages.get(user)
     return render_template('helloflask.html', user=user, age=age)
